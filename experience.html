@@ -1,81 +1,234 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Andrijana Mikovic</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Experience — Andrijana Miković</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2722%27 fill=%27%230a0e14%27/%3E%3Ctext x=%2750%27 y=%2769%27 font-family=%27monospace%27 font-size=%2758%27 fill=%27%232dd4bf%27 text-anchor=%27middle%27%3E%3E%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-inner">
+        <a href="index.html" class="logo"
+          ><span class="path">~/</span>andrijana<span class="cursor">_</span></a
+        >
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          >
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+        <div class="nav-menu">
+          <nav class="links">
+            <a href="index.html">projects</a>
+            <a href="experience.html" class="active">experience</a>
+            <a href="education.html">education</a>
+            <a href="cv.html">cv</a>
+          </nav>
+          <div class="nav-social">
+            <a
+              href="https://www.linkedin.com/in/andrijana-mikovic382/"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/andrijanamikovic"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="mailto:andrijana.mikovic00@gmail.com" aria-label="Email"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <section class="block" style="border-bottom: 0; padding-bottom: 0">
+      <div class="container">
+        <div class="eyebrow">experience</div>
+        <h1 style="font-size: clamp(1.8rem, 4vw, 2.6rem)">
+          Full-stack, across an evolving platform
+        </h1>
+        <p class="lede">
+          I'm a full-stack software engineer at GDi Solutions, working across
+          the frontend, backend, database, and GIS layers of an enterprise Web
+          GIS platform. I joined as a Junior Software Engineer in March 2024,
+          was promoted to Software Engineer I in April 2025, and have since
+          taken on a growing role in the platform's architecture and technical
+          decisions.
+        </p>
+      </div>
+    </section>
 
-				<!-- Header -->
-					<header id="header">
-					</header>
+    <section class="block reveal">
+      <div class="container">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="date">April 2025 – Present</div>
+            <div class="logo-thumb">
+              <img src="images/gdi.png" alt="GDi Solutions logo" />
+            </div>
+            <h3>Software Engineer I — GDi Solutions</h3>
+            <div class="stack">
+              Vue.js<span class="sep">·</span>Node.js<span class="sep">·</span
+              >PostgreSQL<span class="sep">·</span>Python/ArcPy<span class="sep"
+                >·</span
+              >legacy Java/Vuetify
+            </div>
+            <ul>
+              <li>
+                Contributed to migrating
+                <strong>GDi Ensemble Smart Portal</strong>'s backend from Java
+                to Node.js and consolidating its database layer on PostgreSQL,
+                moving the platform off its legacy MSSQL/Oracle/PostgreSQL
+                multi-database setup — while continuing to maintain and build
+                custom components for customers still running the legacy
+                Java/Vuetify version.
+              </li>
+              <li>
+                Implemented JWT authentication and role/privilege-based
+                authorization, and built REST endpoints and business logic used
+                across the platform.
+              </li>
+              <li>
+                Built a GP (geoprocessing) tool with Python and ArcPy for
+                automated spatial data export and analysis.
+              </li>
+              <li>
+                Earlier, built an AI-assisted configuration generator using a
+                self-hosted Llama LLM with custom prompt formatting tailored to
+                the platform's infrastructure.
+              </li>
+              <li>
+                Leading development of the team's in-house UI component library
+                — a from-scratch replacement for Vuetify — having started key
+                parts of it myself and taken on a growing role in architecture
+                and design decisions.
+              </li>
+            </ul>
+          </div>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li ><a href="index.html">Projects</a></li>
-                            <li  class="active"><a href="experience.html">Experience</a></li>
-							<li><a href="education.html">Education</a></li>
-							<li><a href="cv.html">CV</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/andrijana-mikovic382/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/andrijanamikovic" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="mailto:andrijana.mikovic00@gmail.com"><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16"> <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" fill="white"></path> </svg></a></li>
-						</ul>
-					</nav>
+          <div class="timeline-item">
+            <div class="date">April 2024 – March 2025</div>
+            <h3>Junior Software Engineer — GDi Solutions</h3>
+            <div class="stack">
+              Java<span class="sep">·</span>Vue 2.7<span class="sep">·</span
+              >Vuetify<span class="sep">·</span>Vuex / Pinia<span class="sep"
+                >·</span
+              >ArcGIS API<span class="sep">·</span>SQL Server / Oracle /
+              PostgreSQL
+            </div>
+            <ul>
+              <li>
+                Developed new platform features with Vue 2.7 and Vuetify, and
+                built reusable map widgets — file upload, import/export, forms,
+                tables, and filters.
+              </li>
+              <li>
+                Implemented Java backend functionality: REST endpoints, database
+                calls, and proxy-related logic; added database compatibility for
+                Oracle and PostgreSQL alongside the primary Microsoft SQL Server
+                database.
+              </li>
+              <li>
+                Worked with Vuex and Pinia for state management and helped
+                define the architecture for new modules together with the team.
+              </li>
+              <li>
+                Participated in deployments, production debugging, and support
+                across multiple enterprise customer projects.
+              </li>
+            </ul>
+          </div>
 
-				<!-- Main -->
-					<div id="main">
-								<!-- Image -->
-									<p><span class="image left"><img src="images/gdi.png" alt="" /></span>Started as a Junior Software Engineer in late March 2024, working on web applications for viewing and manipulating GIS data. Developed the backend using Java and built the frontend with Vue.js. Integrated the ArcGIS API to access and interact with spatial data published through ArcGIS programs. Worked with various databases, including SQL, Oracle, and PostgreSQL.</p>
-									<p><span class="image right"><img src="images/MDCS_logo.jpeg" alt="" /></span>My first job experience was as a Software Engineer intern at MDCS, where I was part of the maps team. My main task was integrating data from an external source into an existing web application used for data manipulation and enhancement. While the backend was built in C#, my work primarily focused on the frontend, utilizing React.js and D3.js.</p>
-									<hr />
+          <div class="timeline-item">
+            <div class="date">March 2022 – May 2022</div>
+            <div class="logo-thumb">
+              <img
+                src="images/MDCS_logo.jpeg"
+                alt="Microsoft Development Center Serbia logo"
+              />
+            </div>
+            <h3>
+              Software Engineer Intern — Microsoft Development Center Serbia
+            </h3>
+            <div class="stack">
+              React.js<span class="sep">·</span>D3.js<span class="sep">·</span
+              >C# (backend)
+            </div>
+            <ul>
+              <li>
+                Part of the Maps team, worked on an existing web application for
+                viewing and editing map data; backend was built in C#.
+              </li>
+              <li>
+                Focused on the frontend with React.js and D3.js, integrating
+                external point-of-interest data into the existing application.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-					</div>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-label">Email</div>
+            <a href="mailto:andrijana.mikovic00@gmail.com"
+              >andrijana.mikovic00@gmail.com</a
+            >
+          </div>
+          <div>
+            <div class="footer-label">Social</div>
+            <div class="footer-social">
+              <a
+                href="https://www.linkedin.com/in/andrijana-mikovic382/"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a
+                href="https://github.com/andrijanamikovic"
+                aria-label="GitHub"
+                target="_blank"
+                rel="noopener"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">© andrijanamikovic</div>
+      </div>
+    </footer>
 
-				<!-- Footer -->
-					<footer id="footer">
-							<section>
-								<h3>Email</h3>
-								<p><a href="mailto:andrijana.mikovic00@gmail.com">andrijana.mikovic00@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons">
-									<li><a href="https://www.linkedin.com/in/andrijana-mikovic382/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/andrijanamikovic" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; andrijanamikovic</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <script src="assets/js/app.js"></script>
+  </body>
 </html>

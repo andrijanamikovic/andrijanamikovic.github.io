@@ -90,6 +90,11 @@
 				border-style: solid;
 				border-top-width: 2px;
 				text-align: center;
+				@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
+
+				&:hover {
+					background-color: _palette(alt, bg);
+				}
 
 				> :last-child {
 					margin-bottom: 0;
