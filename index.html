@@ -10,11 +10,11 @@
     />
     <meta
       name="description"
-      content="Andrijana Miković — full-stack software engineer working across Vue.js, Node.js, Java, PostgreSQL, and GIS/ArcGIS."
+      content="Andrijana Miković — full-stack software engineer building an enterprise Web GIS platform for clients across industries with Vue.js, Node.js, Java and PostgreSQL."
     />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Andrijana Miković — Software Engineer" />
-    <meta property="og:description" content="Full-stack software engineer working across Vue.js, Node.js, Java, PostgreSQL, and GIS/ArcGIS. Projects, experience and education." />
+    <meta property="og:description" content="Full-stack software engineer building an enterprise Web GIS platform for clients across industries. Selected work, experience and education." />
     <meta property="og:url" content="https://andrijanamikovic.github.io/" />
     <meta property="og:image" content="https://andrijanamikovic.github.io/images/cv.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -49,7 +49,7 @@
         </button>
         <div class="nav-menu">
           <nav class="links">
-            <a href="index.html" class="active">projects</a>
+            <a href="index.html" class="active">work</a>
             <a href="experience.html">experience</a>
             <a href="education.html">education</a>
             <a href="cv.html">cv</a>
@@ -82,14 +82,16 @@
         <div class="eyebrow">full-stack software engineer</div>
         <h1>Hi, I'm Andrijana<span class="accent">.</span></h1>
         <p class="lede">
-          I build across the whole stack — Vue.js on the frontend, Node.js and
-          Java on the backend, with PostgreSQL, Oracle, SQL Server and ArcGIS
-          underneath. Currently a software engineer at GDi Solutions, with a
-          master's in Software Engineering from the University of Belgrade.
+          I'm a full-stack engineer at GDi Solutions, building an enterprise
+          Web GIS platform used by clients across many industries, from
+          energy and utilities to telecommunications and oil. I work
+          end to end: Vue.js interfaces, Node.js and Java APIs, PostgreSQL,
+          Oracle and MySQL underneath, and deployments on client servers.
+          Master's in Software Engineering, University of Belgrade.
         </p>
         <div class="hero-actions">
           <a href="cv.html" class="btn primary">View CV</a>
-          <a href="experience.html" class="btn">Experience</a>
+          <a href="#work" class="btn">Selected work</a>
           <a
             href="https://github.com/andrijanamikovic"
             class="btn"
@@ -100,6 +102,114 @@
         </div>
       </div>
     </section>
+
+    <section class="block reveal" id="work">
+      <div class="container">
+        <div class="block-head">
+          <div class="eyebrow">selected work</div>
+          <h2>What I've shipped at GDi</h2>
+          <p>
+            Production work on GDi's configurable Web GIS platform for
+            enterprise clients. When I joined, it was a Vue, Vuetify and Java
+            stack: a configuration module that also handled user management,
+            the map application frontend, and a sewerage network module. It
+            is now being rebuilt around a Node.js backend, a management
+            module, a configuration module and two in-house libraries. I've
+            worked on both generations. Full role history is on the
+            <a href="experience.html">experience</a> page.
+          </p>
+        </div>
+        <div class="work-list">
+          <article class="work-item">
+            <h3>Setting the foundations of the new platform</h3>
+            <p>
+              Laid much of the groundwork, with the team, for the new
+              configuration module and the new sewerage network module: their
+              code structure, configuration moved into JSON, and global error
+              handling with errors surfaced directly in the configuration
+              module. Built many of the
+              new tools, helping move most
+              configuration out of files and into the UI, and contributed
+              components to the platform's two in-house libraries: a UI library
+              that replaces Vuetify and a shared widget library used by both
+              the map application and the sewerage module.
+              <!-- TODO number: how many tools/modules you set up, how many developers build on them, how many library components you built -->
+            </p>
+            <div class="card-tags">
+              <span class="tag frontend">Vue.js</span><span class="tag backend">Node.js</span><span class="tag tools">Project architecture</span><span class="tag frontend">Component libraries</span>
+            </div>
+          </article>
+          <article class="work-item">
+            <h3>Generating platform configuration with a self-hosted LLM</h3>
+            <p>
+              In the configuration module, where the map application's
+              configuration is built, I added a generator running on a self-hosted Llama model. It
+              combines a description of how a valid configuration file is
+              structured with the user's request into a prompt, then
+              automatically checks what the model returns and fixes most errors
+              and unfinished sections that could otherwise break the whole
+              application. A configuration that took about an hour to write by
+              hand now takes a few minutes from a few sentences of input,
+              depending on the hardware hosting the model.
+            </p>
+            <div class="card-tags">
+              <span class="tag data">LLM / Llama</span><span class="tag data">Prompt design</span><span class="tag tools">Self-hosted</span><span class="tag tools">Validation</span>
+            </div>
+          </article>
+          <article class="work-item">
+            <h3>Moving the platform's backend from Java to Node.js</h3>
+            <p>
+              Helped migrate the platform's backend to Node.js alongside a
+              redesigned frontend, while keeping the existing Java/Vuetify
+              version running for customers who hadn't moved yet. Built the
+              new authentication layer with JWT and role/privilege-based
+              authorization, wrote REST endpoints and business logic used across
+              the platform, and containerized services with Docker so
+              deployments became repeatable.
+              <!-- TODO number: how many endpoints/modules you migrated, or how much deployment time Docker saved -->
+            </p>
+            <div class="card-tags">
+              <span class="tag backend">Node.js</span><span class="tag backend">Java</span><span class="tag backend">JWT / RBAC</span><span class="tag tools">Docker</span>
+            </div>
+          </article>
+          <article class="work-item">
+            <h3>GIS widgets and tools, frontend to backend</h3>
+            <p>
+              Built many map widgets and tools, including import, export,
+              attribute tables, drive-time analysis and custom tools for police
+              and traffic accident data. In the sewerage network module I implemented
+              feature identification, the table of contents and Java backend
+              logic, and fixed map loading. Also added backend support for
+              tool usage logs and a frontend view to browse them.
+            </p>
+            <div class="card-tags">
+              <span class="tag frontend">Vue.js</span><span class="tag frontend">Vuetify</span><span class="tag backend">Java</span><span class="tag data">ArcGIS API</span>
+            </div>
+          </article>
+          <article class="work-item">
+            <h3>Delivering for clients across industries</h3>
+            <p>
+              Worked with enterprise clients across many industries, including
+              electricity distribution, sewerage networks, telecommunications
+              and the oil industry, and with GIS specialists both in-house and
+              in other offices across the GDi group in different countries.
+              Deployed the platform for more than 10 clients on
+              their own servers, migrated
+              databases from MySQL to PostgreSQL and Oracle, and built custom
+              widgets, backend logic and tools for an electricity distribution
+              company. This year I wrote a Python geoprocessing tool for
+              server-side data export for a telecommunications client, and I'm now turning it
+              into a universal, ArcPy-only export tool that any deployment can
+              use.
+            </p>
+            <div class="card-tags">
+              <span class="tag data">Python / ArcPy</span><span class="tag data">PostgreSQL / Oracle / MySQL</span><span class="tag tools">IIS / Apache</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
 
     <section class="block reveal">
       <div class="container">
@@ -142,7 +252,7 @@
               <span class="chip">ArcPy / Geoprocessing</span>
               <span class="chip">Python</span>
               <span class="chip">PostgreSQL</span>
-              <span class="chip">SQL Server</span>
+              <span class="chip">MySQL</span>
               <span class="chip">Oracle</span>
             </div>
           </div>
@@ -178,10 +288,10 @@
     <section class="block reveal">
       <div class="container">
         <div class="block-head">
-          <div class="eyebrow">projects</div>
-          <h2>Things I've built</h2>
+          <div class="eyebrow">earlier projects</div>
+          <h2>University and personal projects</h2>
           <p>
-            A mix of coursework, hackathons, and personal projects. More on
+            Coursework, research and hackathon projects from my studies. More on
             <a href="https://github.com/andrijanamikovic" target="_blank" rel="noopener">GitHub</a>.
           </p>
         </div>

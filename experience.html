@@ -4,7 +4,7 @@
 	<meta charset="utf-8" />
 	<title>Experience — Andrijana Miković</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="Andrijana Miković's work experience — full-stack software engineer at GDi Solutions, previously at Microsoft Development Center Serbia." />
+	<meta name="description" content="Andrijana Miković's work experience: full-stack software engineer at GDi Solutions on an enterprise Web GIS platform, previously at Microsoft Development Center Serbia." />
 	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2722%27 fill=%27%230a0e14%27/%3E%3Ctext x=%2750%27 y=%2769%27 font-family=%27monospace%27 font-size=%2758%27 fill=%27%232dd4bf%27 text-anchor=%27middle%27%3E%3E%3C/text%3E%3C/svg%3E" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +22,7 @@
 			</button>
 			<div class="nav-menu">
 				<nav class="links">
-					<a href="index.html">projects</a>
+					<a href="index.html">work</a>
 					<a href="experience.html" class="active">experience</a>
 					<a href="education.html">education</a>
 					<a href="cv.html">cv</a>
@@ -39,8 +39,8 @@
 	<section class="block" style="border-bottom:0; padding-bottom:0;">
 		<div class="container">
 			<div class="eyebrow">experience</div>
-			<h1 style="font-size: clamp(1.8rem, 4vw, 2.6rem);">Full-stack, across an evolving platform</h1>
-			<p class="lede">I'm a full-stack software engineer at GDi Solutions, working across the frontend, backend, database, and GIS layers of an enterprise Web GIS platform. I joined as a Junior Software Engineer in April 2024, was promoted to Software Engineer I in April 2026, and have since been shaping parts of the platform's architecture and technical direction.</p>
+			<h1 style="font-size: clamp(1.8rem, 4vw, 2.6rem);">Full-stack engineer on an enterprise Web GIS platform</h1>
+			<p class="lede">I'm a full-stack software engineer at GDi Solutions, working across the frontend, backend, database and GIS layers of GDi's configurable Web GIS platform, used by enterprise clients across many industries, including energy, utilities, telecommunications and the oil industry. I joined as a Junior Software Engineer in April 2024 and was promoted to Software Engineer I after two years. Since then I've helped shape the platform's architecture: its Node.js backend, its authentication model and the foundations of its new codebase.</p>
 		</div>
 	</section>
 
@@ -54,24 +54,30 @@
 					<h3>Software Engineer I — GDi Solutions</h3>
 					<div class="card-tags stack-tags"><span class="tag frontend">Vue.js</span><span class="tag frontend">Vuetify</span><span class="tag backend">Node.js</span><span class="tag backend">Java</span><span class="tag data">PostgreSQL</span><span class="tag data">Python / ArcPy</span><span class="tag tools">Docker</span></div>
 					<ul>
-						<li>Contributed to migrating <strong>GDi Ensemble Smart Portal</strong>'s backend from Java to Node.js, alongside a new version and redesign of the frontend — while continuing to maintain and build custom components for customers still on the Java/Vuetify version.</li>
-						<li>Implemented JWT authentication and role/privilege-based authorization, and built REST endpoints and business logic used across the platform.</li>
-						<li>Containerized platform services with Docker for more consistent, repeatable deployments.</li>
-						<li>Built a GP (geoprocessing) tool with Python and ArcPy for automated spatial data export and analysis.</li>
-						<li>Earlier, built an AI-assisted configuration generator using a self-hosted Llama LLM with custom prompt formatting tailored to the platform's infrastructure.</li>
-						<li>Initiated the team's in-house UI component library — a from-scratch replacement for Vuetify — proposing the idea, laying its foundations and core infrastructure, and designing its architecture and components.</li>
+						<li>Helped migrate the platform's backend from Java to Node.js alongside a frontend redesign, while maintaining the Java/Vuetify version and building custom components for customers still on it.</li>
+						<li>Designed and implemented the platform's authentication and authorization: JWT-based auth with role- and privilege-based access control, plus REST endpoints and business logic used across the platform.</li>
+						<li>Laid much of the groundwork, together with the team, for the new platform's configuration module and sewerage network module: code structure, configuration moved into JSON, and global error handling with errors shown directly in the configuration module.</li>
+						<li>Built many of the new platform's tools, helping move most configuration out of files and into the UI.</li>
+						<li>Contributed components to the platform's two in-house libraries: a UI library replacing Vuetify and a shared widget library used by both the map application and the sewerage module.</li>
+						<li>Containerized platform services with Docker, making deployments consistent and repeatable across environments.</li>
+						<li>Built an AI-assisted configuration generator in the configuration module on a self-hosted Llama model: it turns the user's request and a description of a valid configuration into a prompt, then automatically checks the result and fixes most errors and unfinished sections that could break the application. A configuration that took about an hour by hand now takes a few minutes, depending on the hardware hosting the model.</li>
+						<li>Wrote a Python geoprocessing tool for server-side data export for a telecommunications client, and am now turning it into a universal, ArcPy-only export tool.</li>
 					</ul>
 				</div>
 
 				<div class="timeline-item">
 					<div class="date">April 2024 – April 2026</div>
 					<h3>Junior Software Engineer — GDi Solutions</h3>
-					<div class="card-tags stack-tags"><span class="tag frontend">Vue 2.7</span><span class="tag frontend">Vuetify</span><span class="tag frontend">Vuex / Pinia</span><span class="tag backend">Java</span><span class="tag data">ArcGIS API</span><span class="tag data">SQL Server / Oracle / PostgreSQL</span><span class="tag tools">Apache</span><span class="tag tools">IIS</span></div>
+					<div class="card-tags stack-tags"><span class="tag frontend">Vue 2.7</span><span class="tag frontend">Vuetify</span><span class="tag frontend">Vuex / Pinia</span><span class="tag backend">Java</span><span class="tag data">ArcGIS API</span><span class="tag data">MySQL / Oracle / PostgreSQL</span><span class="tag tools">Apache</span><span class="tag tools">IIS</span></div>
 					<ul>
-						<li>Developed new platform features with Vue 2.7 and Vuetify, and built reusable map widgets — file upload, import/export, forms, tables, and filters.</li>
-						<li>Implemented Java backend functionality: REST endpoints, database calls, and proxy-related logic; added database compatibility for Oracle and PostgreSQL alongside the primary Microsoft SQL Server database.</li>
-						<li>Worked with Vuex and Pinia for state management and helped define the architecture for new modules together with the team.</li>
-						<li>Deployed the platform on Windows client servers for multiple enterprise customers — configuring Apache, setting up IIS as a reverse proxy, and migrating customer databases between environments — then handled production debugging and ongoing support.</li>
+						<li>Delivered platform features and custom work for enterprise clients across many industries, including electricity distribution, sewerage networks, telecommunications and the oil industry, from larger platform rollouts to smaller custom tools.</li>
+						<li>Worked closely with GIS specialists, both in-house and in other offices across the GDi group in different countries.</li>
+						<li>Built many map widgets and tools in Vue 2.7 and Vuetify, including import, export, attribute tables, drive-time analysis and custom tools for police and traffic accident data.</li>
+						<li>Worked on the sewerage network module: feature identification, table of contents, Java backend logic and a fix for map loading.</li>
+						<li>Built custom widgets, backend logic and tools for an electricity distribution company.</li>
+						<li>Extended the Java backend with REST endpoints, database access and proxy logic, added backend support for tool usage logs with a frontend view to browse them, and migrated databases from MySQL to PostgreSQL and Oracle.</li>
+						<li>Owned deployments on client Windows servers for more than 10 clients: configured Apache, set up IIS as a reverse proxy, migrated customer databases between environments, and handled production debugging and support.</li>
+						<li>Worked with Vuex and Pinia for state management and helped define the architecture of new modules with the team.</li>
 					</ul>
 				</div>
 
@@ -90,8 +96,9 @@
 					<h3>Software Engineer Intern — Microsoft Development Center Serbia</h3>
 					<div class="card-tags stack-tags"><span class="tag frontend">React.js</span><span class="tag frontend">D3.js</span><span class="tag backend">C#</span></div>
 					<ul>
-						<li>Part of the Maps team, on an existing web application for viewing and editing map data; backend was built in C#.</li>
-						<li>Focused on the frontend with React.js and D3.js, integrating external point-of-interest data into the application.</li>
+						<li>Part of the Maps team, working on an existing web application for viewing and editing map data, with a C# backend.</li>
+						<li>Built a proof of concept for bringing external point-of-interest data into the application: researched where the data could come from and who to ask for it, how it was structured, and how the existing system and codebase worked.</li>
+						<li>Integrated the data into the frontend with React.js and D3.js.</li>
 					</ul>
 				</div>
 
