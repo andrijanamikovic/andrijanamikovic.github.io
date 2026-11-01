@@ -672,25 +672,7 @@ footer.site-footer {
 
 /* ---- Selected work (homepage) ---- */
 
-.work-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr));
-  gap: 1.25rem;
-}
-
-.work-item {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-left: 3px solid var(--accent);
-  border-radius: var(--radius-lg);
-  padding: 1.6rem 1.75rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.work-item h3 { margin-bottom: 0.7rem; }
-.work-item p { font-size: 0.95rem; flex: 1; max-width: 68ch; }
-.block-head p a, .work-item p a { color: var(--accent); }
+.block-head p a { color: var(--accent); }
 .block-head p a:hover { color: var(--accent-strong); }
 
 @media (prefers-reduced-motion: reduce) {
