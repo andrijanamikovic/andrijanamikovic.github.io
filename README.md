@@ -4,9 +4,16 @@
 
 ## About me
 
-I'm a Software Engineer I at GDi Solutions in Belgrade, Serbia, working across the full stack — Vue.js on the frontend, Node.js and PostgreSQL on the backend, with some Python/ArcPy for geoprocessing work and continued maintenance of a legacy Java/Vuetify platform for existing customers. I'm currently leading the build-out of our in-house UI component library (an in-progress Vuetify replacement) and getting increasingly involved in architecture and design decisions.
+I'm a full-stack software engineer at GDi Solutions in Belgrade, Serbia, working on a configurable enterprise Web GIS platform used by clients across many industries, including electricity distribution, sewerage networks, telecommunications and the oil industry. I joined in April 2024 and was promoted to Software Engineer I in April 2026.
 
-I hold an M.Sc. in Software Engineering from the University of Belgrade's School of Electrical Engineering (thesis: *Analysis of trends in world cinematography in the early 21st century*, a social-network-analysis project in Python/NetworkX), and a B.Sc. in Computer Engineering & Information Technology from the same school.
+I work across the whole stack: Vue.js on the frontend, Node.js and Java on the backend, PostgreSQL, Oracle and MySQL databases, Python/ArcPy for geoprocessing, and Docker-based deployments on client servers. Highlights:
+
+- Helped lay the groundwork for the new generation of the platform: code structure, JSON-based configuration and global error handling for the configuration and sewerage network modules.
+- Built JWT authentication with role-based access control as part of the Java-to-Node.js migration.
+- Built an AI-assisted configuration generator on a self-hosted Llama model that cut a configuration from about an hour to a few minutes.
+- Deployed the platform for more than 10 clients and worked with GIS specialists in GDi group offices in several countries.
+
+I hold an M.Sc. in Software Engineering and a B.Sc. in Computer Engineering & Information Technology from the University of Belgrade's School of Electrical Engineering.
 
 - LinkedIn: [andrijana-mikovic382](https://www.linkedin.com/in/andrijana-mikovic382/)
 - GitHub: [andrijanamikovic](https://github.com/andrijanamikovic)
@@ -14,27 +21,40 @@ I hold an M.Sc. in Software Engineering from the University of Belgrade's School
 
 ## About this website
 
-This repository is the source for my personal portfolio site, built as a set of static pages: a projects/home page, an experience timeline, an education page, and a CV page with a downloadable PDF/DOCX.
+A static portfolio site: a home page with selected work, tech stack and projects, an experience timeline, an education page, and a CV page with a downloadable PDF.
 
-It started from the free ["Massively" template by HTML5 UP](https://html5up.net/massively) (see `LICENSE.txt` for the original template's CCA 3.0 license and credits). In August 2026, the site was substantially redesigned and updated with the help of **Claude** (Anthropic's AI assistant): the visual design was rebuilt from scratch into a dark, developer-focused theme (custom CSS design system, a dedicated tech-stack/skills section, a project card grid, and a timeline layout for work experience), and the content was updated to properly reflect my full-stack experience — including the platform's migration from Java to Node.js/PostgreSQL, the geoprocessing and LLM-based tools I built, and my master's thesis project — rather than reading as frontend-only.
+**Stack:** plain HTML, CSS and JavaScript with no build step. Dark theme built on CSS custom properties, Google Fonts (Inter and JetBrains Mono), Font Awesome icons, and a small vanilla JS script for the mobile nav and scroll-reveal animations.
 
-**Stack:** plain HTML/CSS/JS — no build step. Dark theme via CSS custom properties, Google Fonts (Inter + JetBrains Mono), Font Awesome icons, and a small vanilla-JS script for the mobile nav toggle and scroll-reveal animations.
+To run it locally, serve the folder with any static server, for example:
+
+```bash
+python -m http.server 8000
+```
 
 **Structure:**
 
 ```
 Portfolio/
-├── index.html          # Home — intro, tech stack, project grid
-├── experience.html      # Work experience timeline
-├── education.html       # Education history
+├── index.html            # Home: selected work, tech stack, projects
+├── experience.html       # Work experience timeline
+├── education.html        # Education
 ├── cv.html               # CV page with downloadable PDF
 ├── assets/
 │   ├── css/style.css     # Design system (dark theme, components)
-│   ├── js/app.js         # Nav toggle + scroll-reveal
+│   ├── js/app.js         # Nav toggle and scroll-reveal
+│   ├── webfonts/         # Font Awesome fonts
 │   └── AndrijanaMikovicCV.pdf
+├── CV/                   # CV source (Word) and PDF
 └── images/
 ```
 
 ## Credits
 
-Originally built on the "Massively" template by HTML5 UP (html5up.net), used under the CCA 3.0 license — see `LICENSE.txt`. Icons by Font Awesome.
+- The site first started from the "Massively" template by [HTML5 UP](https://html5up.net). It has since been rewritten from scratch, and no template code remains.
+- Redesigned and updated with help from Claude (Anthropic's AI assistant).
+- Icons: [Font Awesome Free](https://fontawesome.com) (icons CC BY 4.0, fonts SIL OFL 1.1, code MIT).
+- Fonts: [Inter](https://rsms.me/inter/) and [JetBrains Mono](https://www.jetbrains.com/lp/mono/) via Google Fonts (SIL OFL 1.1).
+
+## License
+
+The site's code is available under the MIT License. My personal content (text, CV, photos and project images) is not covered by it. See [LICENSE.txt](LICENSE.txt).
